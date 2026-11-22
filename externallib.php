@@ -70,7 +70,7 @@ class local_sync_service_external extends external_api {
         self::validate_context($context);
 
         // Required permissions.
-        require_capability('block/section_links:addinstance', $context);
+        require_capability('moodle/course:update', $context);
 
         $cw = course_create_section($params['courseid'], $params['sectionnum'], false);
 

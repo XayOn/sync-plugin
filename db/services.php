@@ -31,7 +31,7 @@ $functions = array(
         'description' => 'Add new course section',
         'type' => 'write',
         'ajax' => true,
-        'capabilities' => 'block/section_links:addinstance',
+        'capabilities' => 'moodle/course:update',
     ),
     'local_course_add_new_course_module_url' => array(
         'classname' => 'local_sync_service_external',
